@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="input_placeholder">
+            <input id="search" type="text" class="input" placeholder="search..."/>
+            <button type="button" class="search_button" id="search_button"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="change_temperature">
+            <div class="Celsius">
+                <button class="c_button" id="c_button">C&deg</button>
+            </div>
+            <div class="fahrenheit">
+                <button class="f_button" id="f_button">F&deg</button>
+            </div>
+        </div>
+    </header>
+    <div id="current" class="current">
+        <div class="info_about_place">
+            <div>
+                <div id="country"></div>
+                <div id="timeElement"></div>
+            </div>
+                <div id="info"></div>
+        </div>
+        <div id="time_table">
+            <div class="sign">
+
+                
+                <p>Температура,C</p>
+                <p>Відчуається як</p>
+                <p>Вологість,%</p>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="daysHolder"></div>
+    <div id="main"></div>
+</body>
+<script charset="utf-8" type="text/javascript" src="js.js" defer></script>
+</html>

@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.input_placeholder{
+    width: 500px;
+
+}
+.change_temperature{
+    display: flex;
+    
+}
+
+.f_button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 35px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 40px;
+    will-change: transform,opacity;
+    z-index: 0;
+  }
+  
+  .f_button:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .f_button:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .f_button:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .f_button:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .f_button:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .f_button:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .f_button:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .f_button:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+.c_button {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 35px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40px;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.c_button:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.c_button:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.c_button:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.c_button:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.c_button:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.c_button:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.c_button:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.c_button:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+.forecast{
+   display: flex;
+   justify-content: space-around;
+   background-color: white;
+  
+}
+#main{
+    margin: 5vh 10vw;
+    display:flex;
+    justify-content: center;
+    
+}
+.info{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+.current{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 0 12px 0 #0003;
+}
+#country{
+        text-align: center;
+        padding: 5px;
+        font-size: 25px;
+        font-family: sans-serif;
+}
+#timeElement{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+.info_about_place{
+    border-right: 2px solid gray;
+    padding: 10px;
+    
+    
+}
+.curr_temp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-align: center;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+.icon{
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.feels_like{
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#daysHolder{
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 12px 0 #0003;
+   
+}
+.day{
+    width: 100px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.day:after{
+   
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.8);
+}
+.sign{
+    margin:86px 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+.sign p {
+    padding: 10px;
+}
+#time_table{
+    display: flex;
+
+}
+.time_info{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    align-items: center;
+}
+.label{
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    color: black;
+}
+
+.time_info p{
+    padding: 10px;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    font-size: 30px;
+  }
+  .input{
+    -webkit-text-size-adjust: 100%;
+    box-sizing: inherit;
+    font: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+
+}
+i{     -webkit-text-size-adjust: 100%;
+    text-transform: none;
+    cursor: pointer;
+    box-sizing: inherit;
+    display: inline-block;
+    font: normal normal normal 14px/1 fontawesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+}
+.search_button{
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #d7d7d7;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) { 
+.current{
+
+    display: grid;
+    grid-template-columns: repeat(1, 800px);
+} 
+.info_about_place{
+    border-right: none;  
+    border-bottom: 2px solid gray;  
+}
+#time_table{
+    padding: 0;
+    align-items: center;
+    justify-content:center;
+}
+
+.forecast{
+    margin: 0;
+    padding: 0;
+}
+.forecast p{
+    font-size: 15px;
+   padding: 5px;
+}
+.forecast img{
+    width: 50px;
+    height: 50px;
+}
+.sign{
+    margin:75px 0;
+    font-size: 15px;
+}
+} 
+@media screen and (max-width: 600px)
+{ 
+    #daysHolder{
+    width: 400px;
+    }
+    .day{
+    width: 75px;
+    font-size: 15px;
+    }
+    .info{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin:0 ;
+        padding:0;
+
+    }
+    #time_table .sign{
+        position: relative;
+        font-size: 10px;
+        top: 21.4px;
+    }
+    #time_table .sign p{
+        padding: 9px;
+    }
+    #e1 p{
+        font-size: 15px;
+    }
+    .forecast{
+        margin: 0;
+        padding: 0;
+    }
+    .forecast p{
+        font-size: 10px;
+       padding: 5px;
+    }
+    .forecast img{
+        width: 25px;
+        height: 25px;
+    }
+    .sign{
+        margin:63px 0;
+    }
+} 
